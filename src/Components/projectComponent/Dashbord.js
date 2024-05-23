@@ -36,7 +36,8 @@ var useStyles = makeStyles({
         width: '100%',
         height: 715,
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        overflowY: 'scroll', scrollbarWidth: 'none'
 
     },
     profile: {
@@ -164,7 +165,7 @@ export default function Dashbord() {
                     </Grid>
                     <Grid item xs={10} className={useStyle.rightbar}>
                         <Grid style={{ background: '#dff9fb', flexDirection: 'column', width: '100%', height: '50px' }}>
-                            <div style={{ marginLeft: '85%', padding: '5px', display: 'flex', }} >
+                            <div style={{ marginLeft: '85%', padding: '5px', display: 'flex',position:'sticky',zIndex:3 ,top:0}} >
                                 <span style={{ marginLeft: '15px', marginTop: '10px' }}>
                                     <Chat />
                                     <span className={useStyle.topbarIconsBadge}>2</span>

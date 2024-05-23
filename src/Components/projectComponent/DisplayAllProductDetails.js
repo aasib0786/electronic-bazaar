@@ -18,9 +18,8 @@ var useStyles = makeStyles({
     Height: '100%',
     display: 'flex',
     justifyContent: 'center',
-
-
   },
+  
   box: {
     width: '1100px',
     height: 'auto',
@@ -28,8 +27,8 @@ var useStyles = makeStyles({
     padding: 10,
     margin: 10,
     borderRadius: 10,
-
   },
+
   center: {
     display: 'flex',
     justifyContent: 'right',

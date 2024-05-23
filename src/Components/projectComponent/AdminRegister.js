@@ -110,7 +110,7 @@ export default function AdminRegister() {
           <Typography component="h1" variant="h5">
             Sign up
           </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
+          <Box component="form" noValidate  sx={{ mt: 3 }}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
                 <TextField
@@ -172,10 +172,10 @@ export default function AdminRegister() {
           </Grid>
             </Grid>
             <Button
-              type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
+              onClick={handleSubmit}
             >
               Sign Up
             </Button>

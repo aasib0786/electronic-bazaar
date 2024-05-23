@@ -17,8 +17,6 @@ import { useNavigate } from "react-router-dom";
 import { Badge } from "@mui/material";
 import { useSelector } from "react-redux";
 import LoginMyProfile from "./LoginMyProfile";
-import { Store } from "redux";
-
 
 
 export default function Header({ props }) {
@@ -83,10 +81,10 @@ export default function Header({ props }) {
                             <img src={logo} onClick={handlehomeClick} color="white" style={{ width: '80px',height:'60px',background:'#bdc3c7',borderRadius:'10px' }} />
                         </div>
                         {matches ? <></> :
-                            <div style={{ marginLeft: '8%', width: '30%', marginTop: '10px', marginBottom: '10px' }} >
+                            <div style={{ width: '30%', marginTop: '10px', marginBottom: '10px' }} >
                                 <SearchComponent />
                             </div>}
-                        <div style={{ display: 'flex', width: '26%', marginLeft: 'auto', marginTop: '10px' }}>
+                        <div style={{ display: 'flex', width: '20%', marginLeft: 'auto', marginTop: '10px' }}>
                             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                                 <AccountCircle onClick={handle_My_Account} style={{ fontSize: 40 }} />
                                 <div style={{ fontSize: 8, color: '#fff' }}>
